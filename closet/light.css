@@ -1,0 +1,93 @@
+/* ===== Light mode for the Godspeed Closet (closet.html + product.html) =====
+   Turned on by html.light; photos of the closet stay, washed brighter, UI flips to ivory. */
+html.light{--ink:#1b1713;--dim:#6e6559;--line:#0000001a;--cream:#1b1713}
+html.light body{background:#ece6dc;color:#1b1713}
+html.light ::selection{background:#1b1713;color:#fff}
+
+/* nav */
+html.light nav.top{background:#f7f3ecf2;border-bottom-color:#0000001a}
+html.light nav.top .links a{color:#1b1713}
+html.light nav.top .links a.on,html.light nav.top .links a:hover{border-color:#1b1713}
+html.light nav.top .ic svg{stroke:#1b1713}
+html.light .badge i{background:#1b1713;color:#fff}
+html.light .logo-chrome{background:linear-gradient(100deg,#2a2c30 0%,#8d9198 18%,#1d1f22 32%,#c9ccd1 46%,#2a2c30 60%,#9a9ea4 76%,#25272a 100%);background-size:250% 100%}
+.mode{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1px solid #ffffff40;transition:.25s}
+.mode svg{width:15px!important;height:15px!important}
+.mode .sun{display:none}
+html.light .mode{border-color:#00000030}
+html.light .mode .sun{display:block}html.light .mode .moon{display:none}
+
+/* ---------- closet page ---------- */
+html.light .wrap:before{background:#e6dfd3!important;filter:none!important}
+html.light .sec{background:#fbf8f2e8;border-color:#b8934f55;box-shadow:0 24px 50px #5a46281f,inset 0 1px 0 #fff}
+html.light .sec>header{background:linear-gradient(180deg,#fffdf9,#f3ede3);border-bottom-color:#b8934f40}
+html.light .sec>header h3{color:#1b1713}
+html.light .sec>header .tag{color:#6e6559;border-left-color:#00000030}
+html.light .sec>header a{color:#1b1713}
+/* closet walls: same photo, lifted into a bright showroom */
+html.light .bay,html.light .ledge,html.light .case{background-blend-mode:normal}
+html.light .bay{background:radial-gradient(ellipse 22% 55% at 17% 0,#fff3d870,#0000 70%),radial-gradient(ellipse 22% 55% at 50% 0,#fff3d870,#0000 70%),radial-gradient(ellipse 22% 55% at 83% 0,#fff3d870,#0000 70%),linear-gradient(#f6efe3a8,#f1e8d9b8),url(bg-bay.jpg) 50% -110px/100% calc(100% + 110px)!important}
+html.light .ledge{background:linear-gradient(#f6efe3a0,#f6efe3a0) 50% 0/100% calc(100cqw * 290 / 1086) no-repeat,url(bg-ledge.jpg) 50% 0/100% auto no-repeat,#f3ece0!important}
+html.light .bay:before,html.light .ledge:before{background:linear-gradient(90deg,#ece6dccc 0,#ece6dc80 8%,#ece6dc33 18%,#0000 28%,#0000 72%,#ece6dc33 82%,#ece6dc80 92%,#ece6dccc 100%)!important}
+html.light .bay:after{background:linear-gradient(180deg,#f2f3f4,#a7aaae 40%,#6d7074)}
+/* product info panels */
+html.light .meta,html.light .acts,html.light .hang .meta,html.light .hang .acts{background:#fffbf5eb!important;border-color:#0000001f!important;color:#1b1713}
+html.light .meta .p{color:#6e6559}
+html.light .qa{border-color:#1b171399!important;color:#1b1713}
+html.light .qa:hover{background:#1b1713;color:#fff}
+html.light .hrt svg{stroke:#1b1713}
+html.light .sz{background:#fffbf5f5;border-color:#0000002a}
+html.light .sz button{border-color:#0000002a;color:#1b1713}
+html.light .sz button:hover{background:#1b1713;color:#fff}
+html.light .cubby .card{background:linear-gradient(180deg,#fffaf2,#efe6d6)!important;border-color:#b8934f55!important;box-shadow:0 14px 30px #5a46281f!important}
+html.light .cubby .card .ph{background:linear-gradient(180deg,#ffe2b04a,#0000 35%)!important}
+html.light .card .ph img{filter:drop-shadow(0 14px 16px #3a2a1655)!important}
+/* side panels */
+html.light .panel{background:#fbf8f2f2;border-color:#b8934f66;box-shadow:0 24px 50px #5a46281f;color:#1b1713}
+html.light .panel>h4 i{background:#1b1713;color:#fff}
+html.light .tabs{border-bottom-color:#0000001a}html.light .tabs button{color:#6e6559}html.light .tabs button.on{color:#1b1713;border-color:#1b1713}
+html.light .saved .row{border-bottom-color:#0000001a}html.light .saved .row img{background:#f1e9dc;border-color:#b8934f40}
+html.light .saved .row div span,html.light .empty,html.light .look{color:#6e6559}html.light .look b{color:#1b1713}
+html.light .mq{background:radial-gradient(ellipse at 50% 92%,#e7b56a55,#0000 40%),radial-gradient(ellipse at 50% 30%,#0000000a,#0000 60%)}
+html.light .mq .arr{background:#fff;border-color:#00000030;color:#1b1713}
+html.light .btn{border-color:#1b171380;color:#1b1713}
+html.light .btn.w,html.light .panel .btn.w{background:#1b1713;color:#fff;border-color:#1b1713}
+html.light .hero .btn{border-color:#ffffff99;color:#fff}html.light .hero .btn.w{background:#f1ece4;color:#111;border-color:#f1ece4}
+html.light .win .btn,html.light .side-photo .btn{border-color:#ffffffaa;color:#fff}
+html.light footer.strip{background:#f7f3ec;border-top-color:#b8934f55;color:#1b1713}html.light footer.strip span{border-right-color:#0000001a}
+html.light .mbtn{background:#1b1713;color:#fff}
+html.light .stick{background:transparent}
+@media (max-width:1000px){html.light .stick{background:#f7f3ec!important;border-top-color:#b8934f88!important}html.light header{background:none}}
+html.light .toast{background:#1b1713;color:#fff}
+
+/* ---------- product page ---------- */
+html.light .page-bg{filter:brightness(1.6) saturate(.6) blur(3px)!important;opacity:.35}
+html.light .shell,html.light .ctl{background:linear-gradient(180deg,#fdfaf5f2,#f5efe5f5)!important;border-color:#b8934f55!important;box-shadow:0 30px 70px #5a462824!important}
+html.light .crumbs{color:#5d554a}html.light .crumbs b{color:#1b1713}
+html.light .thumbs button{border-color:#0000002a}html.light .thumbs button.on{border-color:#1b1713;box-shadow:0 0 0 1px #1b1713}
+html.light .thumbs button.cut{background:#efe7da}
+html.light .case{background:radial-gradient(ellipse 45% 40% at 50% 0,#fff3d888,#0000 70%),linear-gradient(#f6efe39c,#f1e8d9b0),url(bg-bay.jpg) 50% -40px/100% calc(100% + 40px)!important;border-color:#b8934f88!important;box-shadow:inset 0 0 0 6px #f4eee4,inset 0 0 0 7px #b8934f55,0 30px 60px #5a462833!important}
+html.light .case:before{background:linear-gradient(90deg,#f4eee480 0,#f4eee440 7%,#0000 18%,#0000 82%,#f4eee440 93%,#f4eee480 100%)!important}
+html.light .case .floor{background:linear-gradient(180deg,#ffffff60,#0000 30%),linear-gradient(180deg,#d9cdb9,#b9a98f);border-top-color:#fff}
+html.light .info .k{color:#6e6559}
+html.light .stars{color:#1b1713}html.light .stars span{color:#5d554a}
+html.light .info p.desc{color:#4a4339;border-bottom-color:#0000001f}
+html.light .lab b{color:#5d554a}
+html.light .colors a{background:#f1e9dc;border-color:#0000002a}html.light .colors a.on{border-color:#1b1713;box-shadow:0 0 0 1px #1b1713}
+html.light .sizes button{border-color:#1b171366;color:#1b1713}
+html.light .sizes button.on{background:#1b1713;color:#fff;border-color:#1b1713}
+html.light .add{background:#1b1713!important;color:#fff!important}html.light .add:hover{background:#000!important}html.light .add svg{stroke:#fff!important}
+html.light .wish{border-color:#1b171366}html.light .wish svg{stroke:#1b1713}
+html.light .perks{border-color:#0000001f}html.light .perks div{color:#4a4339}html.light .perks svg{stroke:#1b1713}
+html.light details{border-bottom-color:#0000001f}html.light details div{color:#4a4339}
+html.light .ctl .items{background:radial-gradient(ellipse 30% 40% at 17% 0,#ffe3b555,#0000),radial-gradient(ellipse 30% 40% at 50% 0,#ffe3b555,#0000),radial-gradient(ellipse 30% 40% at 83% 0,#ffe3b555,#0000),#f7f1e7!important;border-color:#b8934f55!important}
+html.light .ctl .it{border-left-color:#b8934f33}
+html.light .ctl .it .im img{filter:drop-shadow(0 12px 12px #3a2a1655)}
+html.light .ctl .it .qa{border-color:#1b171399;color:#1b1713}html.light .ctl .it .qa:hover{background:#1b1713;color:#fff}
+html.light .ctl .it .h svg{stroke:#1b1713}
+html.light .promo .btn{border-color:#ffffffaa;color:#fff}
+/* hero: no filter in light mode, it stays exactly as in dark mode */
+html.light .hero,html.light .hero .cta,html.light .hero .cap,html.light .hero h2{color:#f1ece4}
+html.light .hero .btn{border-color:#ffffff99;color:#fff}
+html.light .hero .btn.w{background:#f1ece4;color:#111;border-color:#f1ece4}
+html.light .win{color:#f1ece4}
